@@ -34,3 +34,6 @@ gulp.task('copySpriteCSS', ['createSprite'], function() {
        .pipe(rename('_sprite.css'))
        .pipe(gulp.dest('./app/assets/styles/modules'));
 });
+
+
+gulp.task('icons', ['createSprite','copySpriteGraphic', 'copySpriteCSS']);
